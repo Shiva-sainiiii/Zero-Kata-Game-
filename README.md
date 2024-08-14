@@ -1,6 +1,4 @@
-Here is the updated README with bold headings:
-
-*Tic-Tac-Toe Game*
+*Zero Kata*
 
 A simple Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 
