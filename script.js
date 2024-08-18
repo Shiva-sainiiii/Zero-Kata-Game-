@@ -1,4 +1,3 @@
-
 // Initialize game state variables
 var flag = 0; // Tracks whose turn it is (0 for O, 1 for X)
 var boxes = document.querySelectorAll(".box"); // Selects all game boxes
