@@ -9,6 +9,9 @@ var winnerName = document.querySelector("#hero h1"); // Selects the winner displ
 // Add event listeners to game boxes
 boxes.forEach(function(elem) {
   elem.addEventListener("click", function() {
+
+  elem.style.backgroundColor="red";
+  elem.style.color="white";
     // Check if box is empty
     if (elem.innerHTML == "") {
       // Update box with current player's symbol
@@ -23,6 +26,12 @@ boxes.forEach(function(elem) {
       checkWinningConditions();
     }
   });
+  //change in the bgcolor of box
+
+
+
+
+
 });
 
 // Function to check winning conditions
@@ -53,6 +62,8 @@ function checkWinningConditions() {
       // Reset game after 3-second delay
       setTimeout(function() {
         resetGame();
+   
+    
       }, 3000);
     }
   });
@@ -63,6 +74,7 @@ function resetGame() {
   // Clear game boxes
   boxes.forEach(function(elem) {
     elem.innerHTML = "";
+    elem.style.backgroundColor="yellow";
   });
   // Reset game state
   flag = 0;
@@ -73,4 +85,18 @@ function resetGame() {
 resetButton.addEventListener("click", function() {
   // Reset game
   resetGame();
+
+  
 });
+
+resetButton.addEventListener("touchstart", function(){
+resetButton.style.backgroundColor="pink";
+resetButton.style.color="black";
+})
+
+
+resetButton.addEventListener("touchend", function(){
+resetButton.style.backgroundColor="red";
+resetButton.style.color="white";
+})
+
